@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Penilaian Subjek Bengkel</title>
+	<link rel="icon" href="https://64.media.tumblr.com/c9b5eb24021033ac8b77452eba7c2f6b/502a3554ba8b4acc-ac/s1280x1920/2e307b7515ecb8925a78698657e7ddd38e1abf85.png">
+	<link rel="stylesheet" type="text/css" href="C:/Users/Hirumi/Documents/PTA/style.css">
+	<script type="module" src="C:/Users/Hirumi/Documents/PTA/script.js"></script>
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+<style type="text/css">
+
+	form {
+    margin: 0 auto;
+    max-width: 400px; /* Optional: set a maximum width for the form */
+    display: flex;
+	flex-direction: column;
+ 	align-items: center;
+    }
+     h1 {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      margin-right: 10px;
+      width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+</style>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    // ...
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Check if Firebase is initialized
+  console.log(firebase);
+</script>
+
+</head>
+<body>
+	<h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Hololive_Production.png" alt="Logo">
+
+  </h1>
+
+	<h2>Login Untuk Soal Selidik</h2>
+
+ <div class="login" style="background-image: url(https://i.pinimg.com/originals/b1/43/72/b143722780a7b9b1bcec1a5728f5bf6e.jpg);">
+ 	<div class="overlay"></div>
+	<form action="login" method="post">
+ 	<label for="username">Username:</label>
+ 	<input type="text" id="username" name="username" required>
+
+ 	<label for="iduser">ID User:</label>
+ 	<input type="text" id="iduser" name="iduser" required>
+
+ 	<button type="submit">Log Masuk</button>
+ 	
+	</form>
+ </div>
+
+
+</body>
+</html>
